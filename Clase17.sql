@@ -33,3 +33,13 @@ WHERE postal_code IN (SELECT postal_code
 					  WHERE postal_code LIKE '%3%');
 					  
 CREATE INDEX codigo_direccion ON address(postal.code);
+
+-- 2
+
+SELECT first_name FROM actor WHERE first_name LIKE "%grace%";
+
+SELECT last_name FROM actor WHERE last_name LIKE "%crowe%";
+
+-- Al tener indice anda mas rápido
+
+-- 3 Desde acá no salio :'('
